@@ -10,12 +10,13 @@ namespace exit_cycle
     {
         static void Main(string[] args)
         {
+            string exitWord = "exit";
             bool isExit = false;
 
             while(isExit == false)
             {
-                Console.WriteLine("Для выхода из цикла напишите 'exit'.");
-                isExit = "exit" == Console.ReadLine();
+                Console.WriteLine("Для выхода из цикла напишите '" + exitWord + "'.");
+                isExit = exitWord == Console.ReadLine();
             }
 
             Console.WriteLine("Вы вышли из цикла.");
